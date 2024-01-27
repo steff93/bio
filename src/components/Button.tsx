@@ -1,12 +1,12 @@
 import Popover from "@mui/material/Popover";
-
 import { useId, useState } from "react";
+import { copyTextToClipboard } from "../helpers/copyText";
 import "./Button.scss";
 
 interface ButtonProps {
   name: string;
   title: string;
-  link?: string;
+  link: string;
 }
 
 const Button = ({ name, title, link: url }: ButtonProps) => {
@@ -14,16 +14,22 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
     null
   );
   const popoverId = useId();
+  const showPopover = Boolean(popoverAnchor);
+
   const isEmail = name === "email";
 
   const emailHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isEmail) return;
     e.preventDefault();
-    setPopoverAnchor(e.currentTarget);
-    console.log("show popover");
-  };
 
-  const showPopover = Boolean(popoverAnchor);
+    const { currentTarget } = e;
+
+    copyTextToClipboard(url)
+      .then(() => {
+        setPopoverAnchor(currentTarget);
+      })
+      .catch((err) => console.log(err));
+  };
 
   const handlePopoverClose = () => {
     setPopoverAnchor(null);
