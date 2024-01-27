@@ -1,21 +1,39 @@
+import ProfilePicture from "../assets/images/IMG_20180827_120934_111.jpg";
+import Button from "./Button";
 import "./Card.scss";
 
-// const socials = [];
-// email - add option to copy email on click
-// Linked In
-// Git Hub
-// Facebook
-// Instagram
+const socialLinks = {
+  email: {
+    title: "Email",
+    link: "stefan_boghean@yahoo.com",
+  },
+  github: {
+    title: "GitHub",
+    link: "https://github.com/steff93",
+  },
+  linkedIn: {
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/stefan-boghean/",
+  },
+};
 
 const Card = () => {
   return (
     <div className="card">
       <div className="card__header">
-        <img alt="profile-image" />
+        <img
+          className="profile-image"
+          alt="profile-image"
+          src={ProfilePicture}
+        />
         <h3 className="profile-name">Stefan Boghean</h3>
-        <h5 className="profile-title">Front-end Developer</h5>
+        <h5 className="profile-title">Passionate Front-end Developer</h5>
       </div>
-      <div className="card__socials"></div>
+      <div className="card__socials">
+        {Object.entries(socialLinks).map(([name, info], index) => {
+          return <Button name={name} {...info} key={index} />;
+        })}
+      </div>
     </div>
   );
 };
