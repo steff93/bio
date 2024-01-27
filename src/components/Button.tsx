@@ -1,3 +1,4 @@
+import ContentPasteIcon from "@mui/icons-material/ContentPaste";
 import Popover from "@mui/material/Popover";
 import { useId, useState } from "react";
 import { copyTextToClipboard } from "../helpers/copyText";
@@ -39,7 +40,7 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
     <>
       <a
         className={`social-link social-link--${name}`}
-        href={url ? url : ""}
+        href={!isEmail ? url : ""}
         target="_blank"
         onClick={emailHandler}
       >
@@ -52,11 +53,11 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
         anchorEl={popoverAnchor}
         onClose={handlePopoverClose}
         anchorOrigin={{
-          vertical: -40,
-          horizontal: 60,
+          vertical: "center",
+          horizontal: "right",
         }}
       >
-        Email Address Copied!
+        <ContentPasteIcon fontSize="small" /> Email Address Copied!
       </Popover>
     </>
   );
