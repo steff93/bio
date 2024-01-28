@@ -17,8 +17,16 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    padding: 10px;
+    padding: 10px 15px;
+    min-width: 150px;
+
+    font-family: InterRegular;
+    font-size: 12px;
+
+    svg {
+      font-size: 12px;
+    }
   }
 }

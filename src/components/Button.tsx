@@ -52,9 +52,10 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
         open={showPopover}
         anchorEl={popoverAnchor}
         onClose={handlePopoverClose}
+        disableScrollLock={true}
         anchorOrigin={{
-          vertical: "center",
-          horizontal: "right",
+          vertical: 40,
+          horizontal: 60,
         }}
       >
         <ContentPasteIcon fontSize="small" /> Email Address Copied!
