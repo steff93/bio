@@ -15,6 +15,10 @@ const socialLinks = {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/stefan-boghean/",
   },
+  facebook: {
+    title: "Facebook",
+    link: "https://www.facebook.com/stefan.boghean.9/",
+  },
 };
 
 const Card = () => {
