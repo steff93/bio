@@ -1,0 +1,32 @@
+.social-link {
+  background-color: #333333;
+
+  min-width: 300px;
+  border-radius: 10px;
+  padding: 11px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.save-email-popover {
+  .MuiPopover-paper {
+    background-color: #333333;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 15px;
+    min-width: 150px;
+
+    font-family: InterRegular;
+    font-size: 12px;
+
+    svg {
+      font-size: 12px;
+    }
+  }
+}
