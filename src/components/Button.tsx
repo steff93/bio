@@ -1,4 +1,5 @@
 import ContentPasteIcon from "@mui/icons-material/ContentPaste";
+import { useMediaQuery } from "@mui/material";
 import Popover from "@mui/material/Popover";
 import { useId, useState } from "react";
 import { copyTextToClipboard } from "../helpers/copyText";
@@ -18,6 +19,8 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
   const showPopover = Boolean(popoverAnchor);
 
   const isEmail = name === "email";
+
+  const isMobile = useMediaQuery("(max-width:767px)");
 
   const emailHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isEmail) return;
@@ -54,8 +57,8 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
         onClose={handlePopoverClose}
         disableScrollLock={true}
         anchorOrigin={{
-          vertical: 40,
-          horizontal: 60,
+          vertical: !isMobile ? 40 : 40,
+          horizontal: !isMobile ? 60 : 40,
         }}
       >
         <ContentPasteIcon fontSize="small" /> Email Address Copied!
