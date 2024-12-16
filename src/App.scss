@@ -12,3 +12,28 @@
     width: 100%;
   }
 }
+
+.wrapper {
+  display: flex;
+  max-width: 90%;
+  gap: 160px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.bio {
+  font-family: InterRegular;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    min-width: 100%;
+
+    flex-direction: column-reverse;
+    gap: 25px;
+    padding: 15px 0;
+  }
+}
