@@ -4,7 +4,7 @@ const Bio = () => {
       <h2>Welcome to my page.</h2>
       <p>
         I'm Stefan, a versatile and passionate front end developer that's been
-        working in the tech industry for more then 9 years. Versatile and
+        working in the tech industry for more than 9 years. Versatile and
         passionate front end developer with a great work ethic, known for
         meticulous attention to detail. A bit of perfectionist when it comes to
         code, but I’m easy to work with. My experience spans over 6 years in
