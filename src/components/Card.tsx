@@ -13,7 +13,7 @@ const Card = () => {
           src={ProfilePicture}
         />
         <h3 className="profile-name">Stefan Boghean</h3>
-        <h4 className="profile-title">Senior Front End Developer</h4>
+        <h4 className="profile-title">Senior Front End Engineer</h4>
       </div>
       <div className="card__socials">
         {Object.entries(socialLinks).map(([name, info], index) => {
