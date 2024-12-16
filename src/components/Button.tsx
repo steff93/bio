@@ -17,12 +17,10 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
   );
   const popoverId = useId();
   const showPopover = Boolean(popoverAnchor);
-
   const isEmail = name === "email";
-
   const isMobile = useMediaQuery("(max-width:767px)");
 
-  const emailHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleButtonClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isEmail) return;
     e.preventDefault();
 
@@ -45,10 +43,11 @@ const Button = ({ name, title, link: url }: ButtonProps) => {
         className={`social-link social-link--${name}`}
         href={!isEmail ? url : ""}
         target="_blank"
-        onClick={emailHandler}
+        onClick={handleButtonClick}
       >
         {title}
       </a>
+
       <Popover
         className="save-email-popover"
         id={popoverId}
