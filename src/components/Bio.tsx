@@ -4,11 +4,11 @@ const Bio = () => {
       <h2>Welcome to my page.</h2>
       <p>
         I'm Stefan, a versatile and passionate front end developer that's been
-        working in the tech industry for more than 9 years. Versatile and
-        passionate front end developer with a great work ethic, known for
-        meticulous attention to detail. A bit of perfectionist when it comes to
-        code, but I’m easy to work with. My experience spans over 6 years in
-        front end development and more than 9 years overall in tech industry.
+        working in the tech industry for more than 9 years. I believe in
+        building software that solve real issues and focuses on good user
+        experience. I stand for clean code practices and good design. I mostly
+        have expertise with React and TypeScript - but can work with any
+        framework.
         <br />
         <br />
         Feel free to contact me for any suggestions or collaborations.
