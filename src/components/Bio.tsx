@@ -5,7 +5,7 @@ const Bio = () => {
       <p>
         I'm Stefan, a versatile and passionate front end developer that's been
         working in the tech industry for more than 9 years. I believe in
-        building software that solve real issues and focuses on good user
+        building software that solves real issues and focuses on good user
         experience. I stand for clean code practices and good design. I mostly
         have expertise with React and TypeScript - but can work with any
         framework.
