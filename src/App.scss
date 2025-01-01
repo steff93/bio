@@ -1,12 +1,9 @@
 #root {
-  max-width: 1280px;
+  // max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  // padding: 2rem;
   text-align: center;
-
-  .card {
-    padding: 2em;
-  }
 
   @media (max-width: 767px) {
     width: 100%;
@@ -15,10 +12,11 @@
 
 .main {
   display: flex;
-  max-width: 90%;
+  // max-width: 90%;
+  max-width: 1280px;
   gap: 12%;
   margin: auto;
-  padding: 40px 0;
+  padding: 4rem 0;
 }
 
 .bio {

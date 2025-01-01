@@ -1,13 +1,17 @@
 import "./App.scss";
 import Bio from "./components/Bio";
 import Card from "./components/Card";
+import Header from "./Header";
 
 function App() {
   return (
-    <div className="main">
-      <Card />
-      <Bio />
-    </div>
+    <>
+      <Header />
+      <div className="main">
+        <Card />
+        <Bio />
+      </div>
+    </>
   );
 }
 

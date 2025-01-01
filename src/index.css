@@ -23,14 +23,15 @@ a {
 
   transition: all 0.3s ease;
 }
+
 a:hover {
-  color: hsl(75, 94%, 57%);
+  color: hsl(177 87% 75%);
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 
