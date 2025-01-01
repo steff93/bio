@@ -4,7 +4,7 @@ import Card from "./components/Card";
 
 function App() {
   return (
-    <div className="wrapper">
+    <div className="main">
       <Card />
       <Bio />
     </div>

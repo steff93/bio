@@ -13,7 +13,7 @@
   }
 }
 
-.wrapper {
+.main {
   display: flex;
   max-width: 90%;
   gap: 12%;
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: 992px) {
-  .wrapper {
+  .main {
     min-width: 100%;
 
     flex-direction: column-reverse;
