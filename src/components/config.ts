@@ -15,4 +15,8 @@ export const socialLinks = {
     title: "Facebook",
     link: "https://www.facebook.com/stefan.boghean.9/",
   },
+  medium: {
+    title: "Medium",
+    link: "https://medium.com/@stefanboghean",
+  },
 };
