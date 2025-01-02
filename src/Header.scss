@@ -10,6 +10,8 @@
   padding: 0 4rem;
   align-items: center;
   background-color: rgb(9 14 25/1);
+
+  flex-shrink: 0;
 }
 
 .inner {
@@ -22,4 +24,19 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0;
+  }
+
+  .inner {
+    padding: 0 45px;
+    gap: 15px;
+  }
+
+  .social-links {
+    display: none;
+  }
 }
