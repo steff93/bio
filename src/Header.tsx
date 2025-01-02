@@ -1,12 +1,14 @@
 import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import "./Header.scss";
 import { socialLinks } from "./components/config";
 
 const Header = () => {
-  const { github, linkedIn, medium } = socialLinks;
+  const { github, linkedIn, medium, email } = socialLinks;
 
   return (
     <div className="header">
@@ -23,6 +25,10 @@ const Header = () => {
 
           <a href={medium.link} target="_blank">
             <FontAwesomeIcon icon={faMedium} />
+          </a>
+
+          <a href={`mailto:${email.link}`}>
+            <EmailIcon />
           </a>
         </div>
       </div>

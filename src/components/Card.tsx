@@ -1,5 +1,6 @@
 import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ProfilePicture from "../assets/images/7A1A8707.jpg";
@@ -7,7 +8,7 @@ import "./Card.scss";
 import { socialLinks } from "./config";
 
 const Card = () => {
-  const { github, linkedIn, medium } = socialLinks;
+  const { github, linkedIn, medium, email } = socialLinks;
 
   return (
     <div className="card">
@@ -31,6 +32,10 @@ const Card = () => {
 
         <a href={medium.link} target="_blank">
           <FontAwesomeIcon icon={faMedium} />
+        </a>
+
+        <a href={`mailto:${email.link}`}>
+          <EmailIcon />
         </a>
       </div>
     </div>
