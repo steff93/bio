@@ -29,14 +29,14 @@
 @media (max-width: 767px) {
   .header {
     padding: 0;
+
+    .social-links {
+      display: none;
+    }
   }
 
   .inner {
     padding: 0 45px;
     gap: 15px;
-  }
-
-  .social-links {
-    display: none;
   }
 }
