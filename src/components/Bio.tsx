@@ -3,7 +3,7 @@ const Bio = () => {
     <div className="bio">
       <h2>Welcome to my page.</h2>
       <p>
-        I'm Stefan, a versatile and passionate front end developer that's been
+        I'm Stefan, a versatile and passionate front end developer who has been
         working in the tech industry for more than 9 years. I believe in
         building software that solves real issues and focuses on good user
         experience. I stand for clean code practices and good design. I mostly
