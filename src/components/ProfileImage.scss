@@ -1,0 +1,24 @@
+.lightbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0;
+  background: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+
+  img {
+    width: 400px;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-close {
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+  }
+}
