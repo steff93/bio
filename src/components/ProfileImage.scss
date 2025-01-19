@@ -1,5 +1,5 @@
 .lightbox {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   left: 0%;
@@ -21,8 +21,12 @@
 
   &-close {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 2%;
     top: 4%;
+
+    @media (max-width: 767px) {
+      right: 4%;
+    }
   }
 }
