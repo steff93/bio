@@ -30,7 +30,7 @@ const Card = () => {
           />
           {/* <FontAwesomeIcon icon={faMagnifyingGlassPlus} /> */}
           <h3 className="profile-name">Stefan Boghean</h3>
-          <h4 className="profile-title">Senior Front End Engineer</h4>
+          <h4 className="profile-title">Senior Front End Engineer!</h4>
         </div>
         <div className="social-links">
           <a href={linkedIn.link} target="_blank">
