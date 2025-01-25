@@ -13,6 +13,14 @@ const Bio = () => {
         <br />
         Feel free to contact me for any suggestions or collaborations.
       </p>
+
+      <a
+        className="cv-download"
+        href="public/Stefan_Boghean.pdf"
+        target="_blank"
+      >
+        Download CV
+      </a>
     </div>
   );
 };
