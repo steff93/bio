@@ -4,8 +4,9 @@ import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import "./Header.scss";
 import { socialLinks } from "./components/config";
+import Menu from "./components/Menu";
+import "./Header.scss";
 
 const Header = () => {
   const { github, linkedIn, medium, email } = socialLinks;
@@ -13,7 +14,8 @@ const Header = () => {
   return (
     <div className="header">
       <div className="inner">
-        <div className="logo">Dreams don't work unless you do.</div>
+        {/* <div className="logo">Dreams don't work unless you do.</div> */}
+        <Menu />
         <div className="social-links">
           <a href={linkedIn.link} target="_blank">
             <LinkedInIcon />

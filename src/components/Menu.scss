@@ -1,0 +1,17 @@
+.nav-menu {
+  ul {
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    list-style: none;
+    font-family: "InterRegular";
+    /* letter-spacing: 2px; */
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    text-underline-offset: 5px;
+    text-decoration: underline;
+  }
+}
