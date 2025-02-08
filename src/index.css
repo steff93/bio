@@ -1,7 +1,7 @@
 @import url(./assets/fonts/fonts.css);
 
 :root {
-  font-family: InterSemi, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: InterRegular, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   position: relative;
@@ -9,7 +9,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   /* background-color: hsl(210, 14%, 7%); */
-  background-color: rgb(9 14 25/1);
+  /* background-color: rgb(9 14 25/1); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,8 +20,6 @@
 a {
   font-weight: 500;
   color: #fff;
-  text-decoration: none;
-
   transition: all 0.3s ease;
 }
 
@@ -42,4 +40,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p {
+  line-height: 2;
 }
