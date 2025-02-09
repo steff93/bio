@@ -1,12 +1,16 @@
+import { NavLink } from "react-router";
 import "./Menu.scss";
 
 const Menu = () => {
   return (
     <nav className="nav-menu">
-      <ul>
-        <li>Home</li>
-        <li>Useful Links</li>
-      </ul>
+      <NavLink to="/" end>
+        Home
+      </NavLink>
+
+      <NavLink to="/useful-links" end>
+        Useful Links
+      </NavLink>
     </nav>
   );
 };

@@ -1,17 +1,21 @@
 .nav-menu {
-  ul {
-    display: flex;
-    width: fit-content;
-    gap: 20px;
-    list-style: none;
-    font-family: "InterSemi";
-    letter-spacing: 1px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
+  list-style: none;
+  font-family: "InterSemi";
+  letter-spacing: 1px;
+  font-size: 16px;
 
-  li:hover {
-    text-underline-offset: 5px;
-    text-decoration: underline;
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+
+    &:hover {
+      text-underline-offset: 5px;
+      text-decoration: underline;
+      color: inherit;
+    }
   }
 }

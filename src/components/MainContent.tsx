@@ -1,31 +1,24 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router";
 import Bio from "./Bio";
 import Card from "./Card";
 import UsefulLinks from "./UsefulLinks";
 
 const MainContent = () => {
-  const [showHome, setShowHome] = useState(false);
-
   return (
-    <>
-      <button
-        style={{ maxWidth: 65, alignSelf: "center", cursor: "pointer" }}
-        onClick={() => setShowHome(!showHome)}
-      >
-        Toggle View
-      </button>
-
-      <div className="main">
-        {showHome && (
-          <>
-            <Card />
-            <Bio />
-          </>
-        )}
-
-        {!showHome && <UsefulLinks />}
-      </div>
-    </>
+    <div className="main">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Card />
+              <Bio />
+            </>
+          }
+        />
+        <Route path="/useful-links" element={<UsefulLinks />} />
+      </Routes>
+    </div>
   );
 };
 
