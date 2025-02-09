@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <FontAwesomeIcon icon={faCopyright} /> {currentYear}
+      Stefan Boghean <FontAwesomeIcon icon={faCopyright} /> {currentYear}
     </div>
   );
 };
