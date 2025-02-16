@@ -3,6 +3,7 @@
 :root {
   --background: hsl(210, 14%, 7%);
   --backgroundSecondary: rgb(9 14 25/1);
+  --darkBackground: rgb(0 0 0/1);
 
   font-family: InterRegular, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,7 +11,7 @@
   position: relative;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
