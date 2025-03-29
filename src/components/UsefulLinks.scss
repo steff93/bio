@@ -1,0 +1,26 @@
+.useful-links {
+  // h3 {
+  //   font-family: InterSemi;
+  //   letter-spacing: 1px;
+  //   font-size: 18px;
+  // }
+
+  .content {
+    margin-top: 60px;
+  }
+
+  .item {
+    border-top: 2px solid hsl(210, 14%, 13%);
+    text-align: left;
+    letter-spacing: 1px;
+
+    .title {
+      font-family: InterSemi;
+      margin-top: 32px;
+    }
+
+    .description {
+      margin-bottom: 32px;
+    }
+  }
+}
